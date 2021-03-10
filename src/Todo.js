@@ -6,8 +6,8 @@ export default function Todo({ todo, toggleTodo }) {
   }
 
   return (
-    <div>
-      <label>
+    <div >
+      <label >
         <input
           type="checkbox"
           checked={todo.complete}
