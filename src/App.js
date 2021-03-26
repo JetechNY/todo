@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import SignUp from "./SignUp"
 import TodoList from "./TodoList";
 import Header from "./Header"
 import Footer from "./Footer"
@@ -42,6 +43,7 @@ function App() {
 
   return (
     <>
+      <SignUp/>
       <Header/>
       <input ref={todoNameRef} type="text" />
       <button onClick={handleAddTodo}>Add Todo</button>
