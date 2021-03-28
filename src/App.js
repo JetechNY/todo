@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from "react";
-import SignUp from "./SignUp"
+import SignUp from "./SignUp";
 import TodoList from "./TodoList";
-import Header from "./Header"
-import Footer from "./Footer"
+import Header from "./Header";
+import Footer from "./Footer";
 import uuidv4 from "uuid/v4";
 
 const LOCAL_STORAGE_KEY = "todoApp.todos";
@@ -43,14 +43,16 @@ function App() {
 
   return (
     <>
-      <SignUp/>
-      <Header/>
+      <SignUp />
+      <Header />
       <input ref={todoNameRef} type="text" />
       <button onClick={handleAddTodo}>Add Todo</button>
       <button onClick={handleClearTodos}>Clear Completed Todos</button>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
-      <div>{todos.filter((todo) => !todo.complete).length} items left to do</div>
-      <Footer/>
+      <div>
+        {todos.filter((todo) => !todo.complete).length} items left to do
+      </div>
+      <Footer />
     </>
   );
 }
