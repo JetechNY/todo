@@ -46,7 +46,7 @@ function App() {
       <SignUp />
       <Header />
       <input ref={todoNameRef} type="text" />
-      <button onClick={handleAddTodo}>Add Todo</button>
+      <button onClick={handleAddTodo}>Add Todos</button>
       <button onClick={handleClearTodos}>Clear Completed Todos</button>
       <TodoList todos={todos} toggleTodo={toggleTodo} />
         {todos.filter((todo) => !todo.complete).length} Items Left To Do
